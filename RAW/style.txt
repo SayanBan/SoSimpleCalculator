@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  background: #87cefa ;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#calculator {
+  background-color: #ffffff;
+  margin: 75px auto;
+  width: 330px;
+  height: 385px;
+  border-radius: 3px;
+}
+
+#calculator .top {
+  color: #999;
+  padding: 3px;
+  width: 330px;
+  height: 10px;
+  text-align: center;
+}
+
+#calculator #result {
+  color: #666;
+  background-color: #f5f5f5;
+  height: 50px;
+  margin-top: 10px;
+  line-height: 50px;
+  border-radius: 0;  
+  text-align: right;
+  border: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  box-shadow: inset 0px 5px rgba(0, 0, 0, 0.25);
+  font-size: 1.5em;
+  overflow: hidden;
+  padding: 0 5px;
+}
+
+#calculator .keys span.operator, #calculator .keys span#eval {
+  background-color: #777;
+}
+
+#calculator .keys span#clear {
+ background-color: #ff3333; 
+}
+
+#calculator .keys span#clear:hover, #calculator .keys span#eval:hover {
+ background-color: #222; 
+}
+
+#calculator .keys span:hover {
+  background-color: #222;
+}
+
+#calculator .keys span {
+  background-color: #999;
+  height: 35px;
+  margin-top: 10px;
+  line-height: 35px;
+  border-radius: 0;
+  text-align: center;
+  border: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  box-shadow: inset 0px 5px rgba(0, 0, 0, 0.25);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  line-height: 50px;
+  width: 70px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+}
+#calculator .keys #eval {
+  width: 310px;
+}
